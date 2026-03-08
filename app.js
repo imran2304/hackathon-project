@@ -2,6 +2,9 @@ const http = require('http');
 
 const server = http.createServer((req,res)=>{
     console.log(req.url , req.method);
+    if(req.url === '/'){
+        res.set
+    }
     res.setHeader('Content-Type' , 'text.html');
     res.write('<h1>Its Working, iam naveen but i am not naveen</h1>')
 });
